@@ -1,0 +1,133 @@
+.content{
+    color: #FDF6F5;
+    font-family: 'Esphimere', sans-serif;
+}
+.logos {
+    width: 100vw;
+    height: 470px;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: linear-gradient(312deg, #E270FC 0%, #260273 49.54%);
+}
+
+.grid{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    z-index: 0;
+}
+
+.noise{
+    position: absolute;
+    left: 0;
+    height: 110vh;
+    z-index: 0;
+}
+
+.fond{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #0d0d0d 0%, rgba(255, 255, 255, 0) 70.54%);
+    z-index: 10;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FDF6F5;
+    position: absolute;
+    width: 80%;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-right: 5px;
+    z-index: 11;
+}
+
+.title{
+    font-family: 'Esphimere', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+}
+.search{
+    display: flex;
+    margin-top: 2%;
+    width: 100%;
+    justify-content: flex-end;
+}
+.search-input {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+    outline: none;
+    width: 60%;
+    margin-right: 5%;
+    background-color: #ffffff;
+}
+
+.search-input:focus {
+    border-color: #643cb4;
+    box-shadow: 0 0 8px rgb(130, 98, 225);
+    color: #0d0d0d;
+}
+
+.search-button{
+    text-decoration: none;
+    color: #FDF6F5;
+    font-size: 1rem;
+    background-color: #D94179;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-family: Esphimere, sans-serif;
+    transition: .5s ease;
+}
+.search-button:hover{
+    color: #D94179;
+    background-color: #FDF6F5;
+}
+
+.filter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 2%;
+}
+.filter li{
+    margin-right: 2%;
+}
+
+.selecteur{
+    text-decoration: none;
+    font-family: Esphimere, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #FDF6F5;
+}
+
+.selecteur:hover{
+    color: #D94179;
+}
+
+.selected{
+    color: #D94179;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.separator{
+    width: 100%;
+    height: 2px;
+    margin-top: 2%;
+    background-color: #FDF6F5;
+}

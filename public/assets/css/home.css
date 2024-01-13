@@ -1,0 +1,64 @@
+body{
+    position: relative;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(312deg, #E270FC 0%, #260273 49.54%);
+    z-index: 0;
+
+}
+.cover2{
+    height: 100vh;
+
+}
+.grid{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.right-face{
+    position: absolute;
+    left: 29%;
+    height: 100%;
+    z-index: 2;
+}
+
+.left-face{
+    position: absolute;
+    right: 29%;
+    height: 100%;
+    z-index: 3;
+}
+
+.noise{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    z-index: 4;
+}
+
+.text{
+    position: absolute;
+    width: 940px;
+    height: 540px;
+    transform: rotate(-2.834deg);
+    top: 5%;
+    left: 5%;
+    z-index: 5;
+}
+.logo {
+    position: absolute;
+    width: 742px;
+    height: 143px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+}
+

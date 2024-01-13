@@ -1,0 +1,188 @@
+
+.content {
+    height: 100vh;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Esphimere, serif;
+}
+
+input {
+    background: transparent;
+    color: #FDF6F5;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+input::-moz-placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+input:focus {
+    outline: 0 transparent solid;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: rgba(0,0,0,0.7);
+}
+
+input:focus::-moz-placeholder {
+    color: rgba(0,0,0,0.7);
+}
+
+input:focus:-ms-input-placeholder {
+    color: rgba(0,0,0,0.7);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10rem;
+    margin: auto;
+    max-width: 50%;
+    padding: .5rem;
+}
+
+.login-text {
+    color: #FDF6F5;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    max-width: 50%;
+    padding: .5rem;
+    text-align: center;
+}
+
+.login-text .fa-stack-1x {
+    color: #0D0D0D;
+}
+
+.login-username, .login-password {
+    background: transparent;
+    border: 0 solid;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    color: #FDF6F5;
+    display: block;
+    margin: 1rem;
+    padding: .5rem;
+    transition: 250ms background ease-in;
+    width: calc(100% - 3rem);
+}
+
+.login-username:focus, .login-password:focus {
+    background: #FDF6F5;
+    color: #0D0D0D;
+    transition: 250ms background ease-in;
+}
+
+.login-forgot-pass {
+    color: #FDF6F5;
+    cursor: pointer;
+    display: block;
+    font-size: 75%;
+    left: 0;
+    opacity: 0.6;
+    padding: .5rem;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.login-forgot-pass:hover {
+    opacity: 1;
+}
+
+.login-submit {
+    border: none;
+    border-radius: 4px;
+    color: #FDF6F5;
+    background: #D94179;
+    font-size: 1rem;
+    font-weight: 100;
+    width: 100%;
+    display: block;
+    margin: 1rem auto;
+    min-width: 1px;
+    padding: .25rem;
+    transition: 250ms background ease-in;
+    font-family: Esphimere, serif;
+
+}
+
+.login-submit:hover, .login-submit:focus {
+    background: #FDF6F5;
+    color: #D94179;
+    transition: 250ms background ease-in;
+}
+
+[class*=underlay] {
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.underlay-photo {
+    animation: hue-rotate 6s infinite;
+    background: url('https://objets.netopera.ch/upj_antoinebravar/upj_antoinebravar668_g4.jpg');
+    background-size: cover;
+    -webkit-filter: grayscale(30%);
+    z-index: -1;
+}
+
+.underlay-black {
+    background: rgba(0,0,0,0.7);
+    z-index: -1;
+}
+
+@keyframes hue-rotate {
+    from {
+        -webkit-filter: grayscale(30%) hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: grayscale(30%) hue-rotate(360deg);
+    }
+}
+h1{
+
+    font-family: Esphimere, serif;
+    font-weight: 100;
+    color: #FDF6F5;
+    font-size: 1.5rem;
+
+}
+
+.text{
+    font-size: 75%;
+    color: #FDF6F5;
+
+}
+
+.text-link{
+    font-size: 120%;
+    color: #D94179;
+    text-decoration: underline;
+}
+
+.alert-danger {
+    margin-top: 20px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #721c24;
+    background-color: #e1626f;
+}
